@@ -1,0 +1,13 @@
+[Unit]
+Description=Mancer Watercooler Display Service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pc/displaywatercoolermanceronubuntu/watercooler.py
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
