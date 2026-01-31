@@ -4,10 +4,11 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /home/pc/displaywatercoolermanceronubuntu/watercooler.py
+ExecStart=/usr/bin/python3 __INSTALL_PATH__/watercooler.py
 Restart=always
 RestartSec=5
 User=root
 
 [Install]
 WantedBy=multi-user.target
+
